@@ -1,0 +1,10 @@
+var a = 77;
+var b = 4;
+console.log("The value of a and b before swap is ".concat(a, " ,$ {b}"));
+console.log("the swapped number are as follows");
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+console.log("After swapping those numbers");
+console.log("a:".concat(a));
+console.log("b:".concat(b));
