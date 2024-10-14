@@ -11,17 +11,13 @@ for (let i = 0; i < string.length; i++) {
             finalstring += string[k];
         }
         finalarray.push(finalstring);
-        //console.log(finalstring);
+
         finalstring = ""
     }
-    //console.log(" ");
 }
-//console.log(finalarray)
-
 for (let len = 0; len < finalarray.length; len++) {
     var i: number = 0
     let j = finalarray[len].length - 1
-    //console.log(j)
     flag = 0;
     while (i <= j) {
         if ((finalarray[len])[i] == (finalarray[len])[j]) {
@@ -35,13 +31,12 @@ for (let len = 0; len < finalarray.length; len++) {
         j--
     }
     if (flag == 1) {
-        //console.log("yes")
+
         if(max<finalarray[len].length){
         max=finalarray[len].length
         maxstring=finalarray[len]
         }
-    }
-    
+    }  
 }
 console.log(`The logest palindeome sub string's length is ${max}, ${maxstring}`)
 
