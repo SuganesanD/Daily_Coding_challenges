@@ -4,19 +4,11 @@
 // Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
 
 var s:string="ACBD"
-var s1:string=""
-var s2:string=""
 var len=s.length
 for(let i=0;i<len;i++){
-    if(s.includes("AB")){
-        s=s.replace("AB","")
-
-        
-    }
-    else if(s.includes("CD")){
-        s=s.replace("CD","")
-       
-    }
-
+    if(s.includes("AB"))
+        s=s.replace("AB","")   
+    else if(s.includes("CD"))
+        s=s.replace("CD","")   
     }
 console.log(`the string is ${s.length}`);
