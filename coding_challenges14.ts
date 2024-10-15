@@ -16,12 +16,10 @@ var remaining=0
 var flag=0
 for(let i=0;i<billarray.length;i++){
     remaining=billarray[i]-5
-    console.log(remaining);
-    
+    console.log(remaining); 
     if(remaining==0){
         finalararray.push(billarray[i])
-        console.log(finalararray);
-        
+        console.log(finalararray);   
     }
     else{
         for(let j=finalararray.length-1;j>=0;j--){     
@@ -31,7 +29,7 @@ for(let i=0;i<billarray.length;i++){
                 finalararray.pop()
                 console.log(finalararray);
                 console.log(billarray[i]);
-                
+
                 finalararray.push(billarray[i])
                 flag=1
                 console.log(finalararray);  
