@@ -1,7 +1,7 @@
 
 // Create a class for ticket booking
 
- let ticketarray:any[]=[]
+let ticketarray:any[]=[]
 class TicketBooking {
     namee: string;
     ticket_number: number;
