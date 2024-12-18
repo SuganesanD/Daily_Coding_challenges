@@ -1,5 +1,5 @@
-// Use 'require' to import prompt-sync
-// Create an instance of the class
+// Create a class for ticket booking
+var ticketarray = [];
 var TicketBooking = /** @class */ (function () {
     function TicketBooking(namee, ticket_number, total_ticket) {
         this.namee = namee;
@@ -8,10 +8,17 @@ var TicketBooking = /** @class */ (function () {
     }
     return TicketBooking;
 }());
-var ticket1 = new TicketBooking("Ram", 1212, 2);
+var id = 1212;
+var ticket1 = new TicketBooking("Ram1", id, 2);
 var ticket2 = new TicketBooking("tom", 3434, 1);
-console.log(ticket1);
-console.log("User input:", ticket1);
-console.log("User input:", ticket2);
-console.log(ticket1.namee);
-console.log(ticket2.namee);
+var ticket3 = new TicketBooking("Ram", 5656, 4);
+var ticket4 = new TicketBooking("ragu", 7878, 1);
+ticketarray.push(ticket1);
+ticketarray.push(ticket2);
+ticketarray.push(ticket3);
+ticketarray.push(ticket4);
+for (var i = 0; i < ticketarray.length; i++) {
+    if ((ticketarray[i].namee == "Ram3") || (ticketarray[i].ticket_number == id)) {
+        console.log(ticketarray[i].ticket_number, ticketarray[i].total_ticket);
+    }
+}
