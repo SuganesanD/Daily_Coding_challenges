@@ -9,16 +9,10 @@
 
  for(let i=0;i<stringarray.length;i++){
      strary=stringarray[i];
-     console.log(strary);
-     
      for(let j=0;j<strary.length;j++){
         char=strary.charAt(j);  
-        console.log(strary);
-        
         if(!(teststring.includes(char))){
             stringarray1.push(strary);
-         
-            console.log("removed");  
             break;
         }
      }
